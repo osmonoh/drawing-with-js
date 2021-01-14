@@ -34,27 +34,27 @@
 
 // CHESS
 
-let size = 8;
+// let size = 8;
 
-for (let i = 1; i <= size; i++) {
-  let draw = "";
-  for (let j = 1; j <= size; j++) {
-    if ((i + j) % 2 === 0) {
-      draw += "-";
-    } else {
-      draw += "#";
-    }
-  }
-  console.log(draw);
-}
+// for (let i = 1; i <= size; i++) {
+//   let draw = "";
+//   for (let j = 1; j <= size; j++) {
+//     if ((i + j) % 2 === 0) {
+//       draw += "-";
+//     } else {
+//       draw += "#";
+//     }
+//   }
+//   console.log(draw);
+// }
 
 // DIAGONAL
 
-// let size = 9;
+let size = 9;
+let draw = "";
 
-// for (let i = 0; i < size; i++) {
-//   let draw = "";
-//   draw = "|".repeat(i);
-//   draw += "=".repeat(size - i);
-//   console.log(draw);
-// }
+for (let i = 0; i < size; i++) {
+  draw = "|".repeat(i);
+  draw += "=".repeat(size - i);
+  console.log(draw);
+}
